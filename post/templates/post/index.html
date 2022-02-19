@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <link href="{% static 'post/css/styles.css' %}" rel="stylesheet" />
+    <title>Mian Page</title>
+  </head>
+  <body>
+    <div class="navbar">
+<a href="{% url 'post:main' %}" class="navar-item">main </a>
+<a href={% url 'post:post' %} class="navar-item">post </a>
+<a href={% url 'post:aboutus' %} class="navar-item">about us </a>
+<a href={% url 'post:contactus' %} class="navar-item">contact us </a>
+    </div>
+    
+  </body>
+</html>

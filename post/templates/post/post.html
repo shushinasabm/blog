@@ -9,6 +9,8 @@
             <h1>{{post.slug}}</h1>
             <h1>{{post.status}}</h1>
             <h1>{{post.discription}}</h1>
+            <img src="/media/{{post.thumbnail}}" width="200px" height="200px"/>
+            <a href="{% url 'post:detail' post.slug %}">{{post.title}}</a>
             {%endfor%}
             
 
