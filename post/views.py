@@ -2,15 +2,17 @@ from multiprocessing import context
 from telnetlib import STATUS
 from django.shortcuts import render , get_object_or_404
 from django.http import  HttpResponse
-from .models import Post
+from .models import Post, aboutus
 # Create your views here.
 def index (request):
     return render(request ,'post/index.html')
-def aboutus (request):
-    return render(request ,'post/aboutus.html')
+def about_us (request):
+     context={
+         'aboutus':aboutus.objects.first()
+     }
+     return render(request ,'post/aboutus.html',context)
 def contactus (request):
-    return render(request ,'post/contactus.html')
-    
+    return render(request ,'post/contactus.html') 
 def test(request):
     #دستور برگشت هر استیرینگی
     return HttpResponse("hello world")

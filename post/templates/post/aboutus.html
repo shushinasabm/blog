@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'post/partials/header.html' %}
+    <title>Aboutus</title>
+</head>
+<body>  
+     
+<article id="about-us">
+<h1>{{ aboutus.title_us }}</h1>
+<hr>
+<p>
+    {{ aboutus.Discrepant_us }}
+</p>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.address_us}} </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.tiwtter_us}} </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.phone_us}} </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.git_hub_us}} </a>
+<hr>
+<img src="/media/{{aboutus.thumbnail_us}}" width="200" height="200" >
+<hr>
+<a href="{% url 'post:aboutus'%} ">{{aboutus.insta_us}}  </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.linkedin_us}} </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.email_us}} </a>
+<hr>
+<a href="{% url 'post:aboutus'%}">{{aboutus.facebook_us}} </a>
+<hr>
+</article>
+{% include 'post/partials/footer.html' %}
+</body>
+</html>

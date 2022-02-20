@@ -24,5 +24,19 @@ class Post(models.Model):
     def __str__(self) -> str:
         return self.title
 
+class aboutus(models.Model):
 
-        
+    title_us = models.CharField(max_length=100,blank=False)
+    Discrepant_us = models.TextField()
+    insta_us = models.URLField(max_length=200)
+    git_hub_us =models.URLField(max_length=200)
+    thumbnail_us = models.ImageField(upload_to='images/',null=True)
+    phone_us =models.CharField(max_length=14)
+    tiwtter_us =models.URLField(max_length=200)
+    address_us=models.CharField(max_length=200)
+    email_us =models.CharField(max_length=200)
+    linkedin_us =models.URLField(max_length=200)
+    facebook_us =models.URLField(max_length=200)
+
+    def __str__(self) -> str:
+        return self.title_us        
