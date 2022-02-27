@@ -5,7 +5,7 @@ from django.http import  HttpResponse
 from .models import Post, aboutus
 # Create your views here.
 def index (request):
-    return render(request ,'post/index.html')
+    return render(request ,'post/base.html')
 def about_us (request):
      context={
          'aboutus':aboutus.objects.first()
@@ -30,5 +30,6 @@ def detail(request ,slug ):
          'post':get_object_or_404(Post,slug = slug , status='p')
      }
      return render(request , "post/detail.html", context)
+   
 
        
