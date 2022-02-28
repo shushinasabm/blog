@@ -44,8 +44,6 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-
-
 }
 .heder-items{
   margin: 0 10px !important ;
@@ -70,7 +68,6 @@ align-items: center;
   display: flex;
   justify-content:space-around;
 align-items: center;
-
 }
 .works{
   color: #BB8257;
@@ -78,11 +75,11 @@ align-items: center;
   text-decoration: none;
   border-radius: 10px;
   padding: 10px 10px;
+  text-align: left;
 }
 .works:hover{
   color: white;
-  background-color: #BB8257;
-  
+  background-color: #BB8257; 
 }
 #information img{
   width: 500px ;
@@ -93,13 +90,60 @@ align-items: center;
 }
 .works-parent{
   margin-top: 2rem;
-
 }
 #information div{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+ 
   justify-content: start;
   flex-direction: column;
 
+}
+#skills-section{
+  padding: 2rem;
+ flex: 1;
+  height: 30rem;
+  background-color: #311E25;
+}
+#skills-section h2{
+  color: white;
+}
+#skills-parents p{
+  color: #Afacad;
+}
+#skills-parents{
+  display: flex;
+  justify-content: end;
+
+
+}
+.paragraf{
+  flex: 1;
+  margin-top: 30px;
+}
+.skills{
+  flex:1;
+}
+body{
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+.Download-cv{
+  color: #BB8257;
+  border: 3px solid #BB8257;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: left;
+  margin-top: 50px !important;
+}
+.skills-progressbar{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1;
+  padding-left: 50px;
+}
+progress{
+  border-radius: 5px;
 }
