@@ -6,6 +6,10 @@ from .models import AboutUs, Post
 # Create your views here.
 
 
+
+
+
+
 def aboutUs(request):
     context = {
         'aboutus':AboutUs.objects.first()
