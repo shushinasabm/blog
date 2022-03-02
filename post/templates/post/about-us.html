@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'post/css/styles.css' %}" rel="stylesheet"/>
+
+    <title>درباره ما</title>
+</head>
+<body>
+    {% include 'post/partials/header.html' %}
+    <article id="about-us">
+    <h1>{{aboutus.title}}</h1>
+    <p>{{aboutus.description}}</p>
+    <img src="/media/{{aboutus.thumbnail}}" alt="" srcset="" width="100" height="100">
+    <p>{{aboutus.address}}</p>
+    <p>{{aboutus.phone}}</p>
+    <p>{{aboutus.email}}</p>
+    <a href="{{aboutus.linkedin}}">linkedin</a>
+    <a href="{{aboutus.github}}">github</a>
+    <a href="{{aboutus.twitter}}">twitter</a>
+    <a href="{{aboutus.facebook}}">facebook</a>
+    </article>
+    
+    {% include 'post/partials/footer.html' %}
+
+</body>
+</html>
